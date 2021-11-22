@@ -1,4 +1,4 @@
-# NP Consulting 
+# POC Paragraph Layout
 
 ## Installation of Dev environment
 
@@ -9,7 +9,7 @@
 ### Hosts and Domains 
  Add local domains to `/etc/hosts`
 ```
-127.0.0.1    np-consulting.local
+127.0.0.1    ppl.local
 ```
 
 ### Installation
@@ -18,8 +18,6 @@
 1. Duplicate and rename `cp web/sites/default/lando.settings.local.php web/sites/default/settings.local.php`
 1. Start lando (`lando start`)
 1. Install dependencies (`lando composer install --prefer-dist`)
-1. Get Dump of DGEO and place it in `web`
-1. Import Dump `lando db-import dump/np_consulting_20210804_1558.sql.gz`
 1. Clear caches `lando drush cr`
 
 
