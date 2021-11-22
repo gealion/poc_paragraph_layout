@@ -1,0 +1,12 @@
+uuid: 7e83b48f-18e6-4fc6-a75f-698f6366a886
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:3b0cc00b-e77f-409c-94db-ebafd41e9ecb'
+id: text
+label: Text
+icon_uuid: 3b0cc00b-e77f-409c-94db-ebafd41e9ecb
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNCA2SDIwTTQgMTJIMjBNNCAxOEgxMSIgc3Ryb2tlPSIjNTNCMEVCIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K'
+description: ''
+behavior_plugins: {  }

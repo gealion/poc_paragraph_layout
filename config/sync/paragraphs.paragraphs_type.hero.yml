@@ -1,0 +1,12 @@
+uuid: 6ec4cd7e-2380-4b7b-9c68-7782246f86b9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:18fdd036-6b6d-4dfa-bb1a-00f05b15dab6'
+id: hero
+label: Hero
+icon_uuid: 18fdd036-6b6d-4dfa-bb1a-00f05b15dab6
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MAoiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMTFIMTdNNSAyMUgxOUMyMC4xMDQ2IDIxIDIxIDIwLjEwNDYgMjEgMTlWN0MyMSA1Ljg5NTQzIDIwLjEwNDYgNSAxOSA1SDVDMy44OTU0MyA1IDMgNS44OTU0MyAzIDdWMTlDMyAyMC4xMDQ2IDMuODk1NDMgMjEgNSAyMVoiIHN0cm9rZT0iIzUzQjBFQiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg=='
+description: ''
+behavior_plugins: {  }

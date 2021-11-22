@@ -1,0 +1,22 @@
+uuid: a71cd50b-05ff-49b9-a7fa-4d7459d7509c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reference_list.field_count
+    - paragraphs.paragraphs_type.reference_list
+id: paragraph.reference_list.default
+targetEntityType: paragraph
+bundle: reference_list
+mode: default
+content:
+  field_count:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true

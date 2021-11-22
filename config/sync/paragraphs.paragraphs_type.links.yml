@@ -1,0 +1,12 @@
+uuid: abac01b8-bfee-495a-8966-708114e3adc1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:e64276be-a398-496d-97a9-659069af2098'
+id: links
+label: Links
+icon_uuid: e64276be-a398-496d-97a9-659069af2098
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTQgNUwyMSAxMk0yMSAxMkwxNCAxOU0yMSAxMkwzIDEyIiBzdHJva2U9IiM1M0IwRUIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo='
+description: ''
+behavior_plugins: {  }

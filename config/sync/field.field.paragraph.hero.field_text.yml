@@ -1,0 +1,26 @@
+uuid: 5892ca26-4de1-43ca-9b9e-f4e685beaa1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.hero
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    rich_text: rich_text
+    plain_text: '0'
+id: paragraph.hero.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: hero
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

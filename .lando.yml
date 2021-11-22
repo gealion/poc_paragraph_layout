@@ -1,0 +1,19 @@
+name: np-consulting
+recipe: drupal9
+config:
+  webroot: web
+proxy:
+  appserver:
+    - np-consulting.local
+services:
+  appserver:
+    type: php:8.0
+  node:
+    type: node:14
+    build:
+      - npm install
+tooling:
+  npm:
+    service: node
+  node:
+    service: node

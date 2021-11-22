@@ -1,0 +1,23 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-lg-3 mb-3">
+      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-logo d-block mx-auto">
+        <img src="/{{ base_path ~ directory }}/logo.svg" alt="{{ 'Home'|t }}" class="img-fluid mx-auto"  width="50%"/>
+      </a>
+    </div>
+    {% for item in items %}
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>{{ item.title }}</h5>
+        {% if item.below %}
+          <ul class="list-unstyled">
+            {% for link in item.below %}
+              <li{{ link.attributes.addClass(['mb-2']) }}>
+                {{ link(link.title, link.url) }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

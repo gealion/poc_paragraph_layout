@@ -1,0 +1,20 @@
+uuid: 22e9f0a3-fa29-4a8d-b692-a545d529376a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - np_consulting
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: np_consulting_local_actions
+theme: np_consulting
+region: content
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

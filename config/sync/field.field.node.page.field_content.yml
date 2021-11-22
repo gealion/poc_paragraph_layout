@@ -1,0 +1,71 @@
+uuid: d3f20297-02ca-4530-b7a3-46005ede7837
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.page
+    - paragraphs.paragraphs_type.contact_form
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.media
+    - paragraphs.paragraphs_type.reference_list
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.title
+  module:
+    - entity_reference_revisions
+id: node.page.field_content
+field_name: field_content
+entity_type: node
+bundle: page
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      layout: layout
+      title: title
+      text: text
+      media: media
+      hero: hero
+      links: links
+      contact_form: contact_form
+      reference_list: reference_list
+      map: map
+    target_bundles_drag_drop:
+      contact_form:
+        enabled: true
+        weight: -11
+      hero:
+        enabled: true
+        weight: -13
+      layout:
+        enabled: true
+        weight: -17
+      links:
+        enabled: true
+        weight: -12
+      map:
+        enabled: true
+        weight: 14
+      media:
+        enabled: true
+        weight: -14
+      reference_list:
+        enabled: true
+        weight: -10
+      text:
+        enabled: true
+        weight: -15
+      title:
+        enabled: true
+        weight: -16
+field_type: entity_reference_revisions

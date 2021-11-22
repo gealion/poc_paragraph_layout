@@ -1,0 +1,31 @@
+one_column:
+  label: 'One column'
+  path: layouts/one-column
+  template: layout--one-column
+  library: ppl_content/one_column
+  class: '\Drupal\ppl_content\Plugin\Layout\OneColumnLayout'
+  category: 'NP Consulting'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
+two_columns:
+  label: 'Two columns'
+  path: layouts/two-columns
+  template: layout--two-columns
+  library: ppl_content/two_columns
+  class: '\Drupal\ppl_content\Plugin\Layout\TwoColumnsLayout'
+  category: 'NP Consulting'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    top:
+      label: top
+    first:
+      label: First
+    second:
+      label: Second

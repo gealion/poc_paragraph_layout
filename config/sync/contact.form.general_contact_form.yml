@@ -1,0 +1,12 @@
+uuid: 3483bbb5-2382-4b53-abe1-bd40cac399ae
+langcode: en
+status: true
+dependencies: {  }
+id: general_contact_form
+label: 'General Contact Form'
+recipients:
+  - admin@np-consulting.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

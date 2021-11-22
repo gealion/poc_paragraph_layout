@@ -1,0 +1,12 @@
+uuid: fc68e43c-c04c-42e3-ba90-6c14aa6e2921
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:d8d23549-30ce-49f8-9904-e3d2ae69a071'
+id: contact_form
+label: 'Contact Form'
+icon_uuid: d8d23549-30ce-49f8-9904-e3d2ae69a071
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMyA4TDEwLjg5MDYgMTMuMjYwNEMxMS41NjI0IDEzLjcwODMgMTIuNDM3NiAxMy43MDgzIDEzLjEwOTQgMTMuMjYwNEwyMSA4TTUgMTlIMTlDMjAuMTA0NiAxOSAyMSAxOC4xMDQ2IDIxIDE3VjdDMjEgNS44OTU0MyAyMC4xMDQ2IDUgMTkgNUg1QzMuODk1NDMgNSAzIDUuODk1NDMgMyA3VjE3QzMgMTguMTA0NiAzLjg5NTQzIDE5IDUgMTlaIiBzdHJva2U9IiM1M0IwRUIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo='
+description: ''
+behavior_plugins: {  }

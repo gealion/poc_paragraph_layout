@@ -1,0 +1,49 @@
+uuid: 6d226555-547c-4b60-a130-fc810f912b26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_links
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.links
+  module:
+    - entity_reference_revisions
+id: paragraph.hero.field_paragraph_links
+field_name: field_paragraph_links
+entity_type: paragraph
+bundle: hero
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      links: links
+    target_bundles_drag_drop:
+      hero:
+        weight: 8
+        enabled: false
+      layout:
+        weight: 9
+        enabled: false
+      links:
+        enabled: true
+        weight: 10
+      media:
+        weight: 11
+        enabled: false
+      reference_list:
+        weight: 12
+        enabled: false
+      text:
+        weight: 13
+        enabled: false
+      title:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

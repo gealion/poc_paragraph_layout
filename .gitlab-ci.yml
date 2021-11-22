@@ -1,0 +1,46 @@
+variables:
+  PROJECT_NAME: "np-consulting"
+  SERVER_STAGING: "185.19.31.110"
+  IMAGE_TAG_ID: $CI_REGISTRY_IMAGE:$CI_PIPELINE_ID
+  IMAGE_TAG_LATEST: $CI_REGISTRY_IMAGE:latest
+
+stages:
+  - build
+  #  - package
+
+composer:
+  stage: build
+  image: hub.devfactory.ch/devfactory/cicd-php:8.0
+  cache:
+    key: "composer--$CI_BUILD_REF_NAME"
+    paths:
+      - web/core/
+      - web/modules/contrib/
+      - vendor/
+  artifacts:
+    paths:
+      - web/core/
+      - web/themes/contrib/
+      - web/modules/contrib/
+      - vendor/
+    expire_in: 1 hour
+  script:
+    - composer install -q --no-ansi --no-plugins --no-interaction --no-scripts --no-progress --prefer-dist --optimize-autoloader
+
+# dockerize:
+#   stage: package
+#   dependencies:
+#     - composer
+#   before_script:
+#     - echo $CONTAINER_TEST_IMAGE
+#     - echo $CONTAINER_RELEASE_IMAGE
+#     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+#   script:
+#     - docker build -f .docker/Dockerfile --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') --build-arg COMMIT_REF=$CI_COMMIT_SHA -t $IMAGE_TAG_ID -t $IMAGE_TAG_LATEST .
+#     - docker push $IMAGE_TAG_ID
+#     - docker push $IMAGE_TAG_LATEST
+#   tags:
+#     - exoscale
+#   only:
+#     - master
+ 

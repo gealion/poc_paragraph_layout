@@ -1,0 +1,12 @@
+uuid: 882376f2-5e95-4ffe-92ea-cc168e39833d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:7716b96e-7547-4017-a5a4-5e374fa57e75'
+id: title
+label: Title
+icon_uuid: 7716b96e-7547-4017-a5a4-5e374fa57e75
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTggMTJINiIgc3Ryb2tlPSIjNTNCMEVCIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K'
+description: ''
+behavior_plugins: {  }

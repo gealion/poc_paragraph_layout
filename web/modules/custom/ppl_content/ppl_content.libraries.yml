@@ -1,0 +1,10 @@
+one_column:
+  version: VERSION
+  css:
+    theme:
+      layouts/one-column/one-column.css: {}
+two_columns:
+  version: VERSION
+  css:
+    theme:
+      layouts/two-columns/two-columns.css: { }

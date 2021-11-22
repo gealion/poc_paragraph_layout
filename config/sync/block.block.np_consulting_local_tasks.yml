@@ -1,0 +1,22 @@
+uuid: 297bf53e-d449-490e-93ba-7a0dd0720d7c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - np_consulting
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: np_consulting_local_tasks
+theme: np_consulting
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

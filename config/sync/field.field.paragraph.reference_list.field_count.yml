@@ -1,0 +1,23 @@
+uuid: 8a019e1b-8665-4051-9876-e3b627407dbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_count
+    - paragraphs.paragraphs_type.reference_list
+id: paragraph.reference_list.field_count
+field_name: field_count
+entity_type: paragraph
+bundle: reference_list
+label: Count
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

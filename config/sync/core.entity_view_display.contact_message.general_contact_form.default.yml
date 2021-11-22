@@ -1,0 +1,16 @@
+uuid: 6ab21307-e4ae-4b7c-936f-642cc76b77ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.general_contact_form
+id: contact_message.general_contact_form.default
+targetEntityType: contact_message
+bundle: general_contact_form
+mode: default
+content: {  }
+hidden:
+  mail: true
+  message: true
+  name: true
+  subject: true

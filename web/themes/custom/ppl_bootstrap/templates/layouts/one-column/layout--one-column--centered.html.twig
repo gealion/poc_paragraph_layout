@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+<section {{ attributes }}>
+  <div class="container col-xxl-8 px-4 py-5">
+    {{ content.content }}
+  </div>
+</section>

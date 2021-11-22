@@ -1,0 +1,22 @@
+uuid: 25c7202a-f85b-413d-a63f-28871305ce98
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - np_consulting
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: np_consulting_messages
+theme: np_consulting
+region: content
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: 945cbddc-024c-4cab-a82e-4db0ebbbf9cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.contact_form.field_contact_form
+    - paragraphs.paragraphs_type.contact_form
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.contact_form.preview
+targetEntityType: paragraph
+bundle: contact_form
+mode: preview
+content:
+  field_contact_form:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

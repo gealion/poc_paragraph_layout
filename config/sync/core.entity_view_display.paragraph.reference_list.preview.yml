@@ -1,0 +1,31 @@
+uuid: 5ace6f6c-1cd5-4dbe-9e9b-78e24e87cd54
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.reference_list.field_count
+    - paragraphs.paragraphs_type.reference_list
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.reference_list.preview
+targetEntityType: paragraph
+bundle: reference_list
+mode: preview
+content:
+  field_count:
+    weight: 1
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  extra_field_reference_grid: true
+  extra_field_reference_list: true

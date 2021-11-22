@@ -1,0 +1,58 @@
+uuid: d0ed71a9-1c9f-4a5f-adb2-202b636061c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.map.field_geofield
+    - paragraphs.paragraphs_type.map
+  module:
+    - geofield_map
+id: paragraph.map.default
+targetEntityType: paragraph
+bundle: map
+mode: default
+content:
+  field_geofield:
+    weight: 1
+    settings:
+      html5_geolocation: false
+      default_value:
+        lat: !!float 0
+        lon: !!float 0
+      map_library: leaflet
+      map_google_api_key: ''
+      map_google_places:
+        places_control: false
+        places_additional_options: ''
+      map_geocoder:
+        control: 0
+        settings:
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          options: ''
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: true
+      zoom_level: 5
+      zoom:
+        start: 6
+        focus: 12
+        min: 0
+        max: 22
+      click_to_find_marker: false
+      click_to_place_marker: false
+      hide_coordinates: false
+      geoaddress_field:
+        field: '0'
+        hidden: false
+        disabled: true
+    third_party_settings: {  }
+    type: geofield_map
+    region: content
+hidden:
+  created: true
+  status: true

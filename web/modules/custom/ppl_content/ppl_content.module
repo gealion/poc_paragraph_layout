@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * @file
+ * Primary module hooks for ppl_content module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function ppl_content_theme($existing, $type, $theme, $path) {
+  return [
+    'cta_link' => [
+      'variables' => [
+        'title' => '',
+        'attributes' => new Attribute(
+          [
+            'class' => [
+              'btn-primary',
+            ],
+            'href' => '#',
+            'type' => 'button',
+          ]
+        ),
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,22 @@
+uuid: 1e5e8eb7-b3ab-4d51-a194-81d5656e4d13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.links.field_links
+    - paragraphs.paragraphs_type.links
+  module:
+    - npc_content
+id: paragraph.links.default
+targetEntityType: paragraph
+bundle: links
+mode: default
+content:
+  field_links:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: cta_link
+    region: content
+hidden: {  }

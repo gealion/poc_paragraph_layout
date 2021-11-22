@@ -1,0 +1,18 @@
+name: POC Bootstrap
+type: theme
+base theme: bootstrap5
+description: POC of using Paragraph Layout with Boostrap (5)
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+ckeditor_stylesheets:
+  - css/ckeditor.css
+
+libraries:
+  - ppl_bootstrap/global-styling
+regions:
+  header: 'Header'
+  page_top: 'Page top'
+  content: 'Content'
+  page_bottom: 'Page bottom'
+  footer: 'Footer'
